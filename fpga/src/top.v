@@ -39,7 +39,7 @@ module top (
     // Timed reconfiguration control: hold high for 5 seconds, then low
     timed_restart #(
         .CLOCK_MHZ(27),
-        .HOLD_SECS(1)
+        .HOLD_SECS(2)
     ) u_timed_restart (
         .clk(clk_27mhz),
         .esp_cs_n(esp_cs_n),
